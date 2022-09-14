@@ -12,6 +12,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="25dp"
         android:hint="enter first number"
+        android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +25,7 @@
         android:layout_height="41dp"
         android:layout_marginTop="25dp"
         android:hint="enter second number"
+        android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/number1"
         app:layout_constraintStart_toStartOf="@+id/number1"
@@ -81,11 +83,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="Result"
+        android:textAlignment="center"
         android:textSize="26sp"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/equals" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/equals"
+        android:text="No decimals  or negatives"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="429dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

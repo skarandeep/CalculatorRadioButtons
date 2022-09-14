@@ -32,9 +32,25 @@ public class MainActivity extends AppCompatActivity {
         equals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int firstNumberValue = Integer.parseInt(firstNumber.getText().toString());
+                int secondNumberValue = Integer.parseInt(secondNumber.getText().toString());
 
-            }
-        });
+                int operatorButtonId = operators.getCheckedRadioButtonId();
 
-    }
+                Integer answer = null;
+
+                if (operatorButtonId == add.getId()){
+                    answer = firstNumberValue + secondNumberValue;
+                } else if(operatorButtonId == minus.getId()){
+                    answer = firstNumberValue - secondNumberValue;
+                } else if(operatorButtonId == multiply.getId()){
+                answer = firstNumberValue * secondNumberValue;
+                } else if(operatorButtonId == divide.getId()) {
+                    answer = firstNumberValue / secondNumberValue;
+                }
+                result.setText(answer.toString());
+        }
+
+    });
+}
 }
