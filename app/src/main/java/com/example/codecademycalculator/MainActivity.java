@@ -3,6 +3,7 @@ package com.example.codecademycalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -28,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         Button equals = findViewById(R.id.equals);
         TextView result = findViewById(R.id.result);
 
+        equals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
     }
 }
