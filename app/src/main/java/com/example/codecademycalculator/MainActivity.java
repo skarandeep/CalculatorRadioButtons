@@ -3,6 +3,11 @@ package com.example.codecademycalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +15,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        EditText firstNumber = findViewById(R.id.number1);
+        EditText secondNumber = findViewById(R.id.number2);
+
+        RadioGroup operators = findViewById(R.id.operators);
+        RadioButton add = findViewById(R.id.addition);
+        RadioButton minus = findViewById(R.id.subtraction);
+        RadioButton multiply = findViewById(R.id.multiplication);
+        RadioButton divide = findViewById(R.id.division);
+
+        Button equals = findViewById(R.id.equals);
+        TextView result = findViewById(R.id.result);
+
+
     }
 }
